@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ArtyBot🐰💗</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="hearts"></div>
+  
+  <div id="landing" class="landing-container">
+  <h1 class="glow-title">
+  <span class="logo-text">ArtyBot</span>
+  <span class="logo-emoji"> 🐰💗</span>
+  </h1>
+
+  <h2>Your own personal AI Artija</h2>
+
+  <p class="love-note">
+    Happy Birthday, Boo.  
+    This is something tiny, nerdy, and very me.  
+    Whenever you miss me, fight with me, flirt with me, or just want to hear me nag you about your grammar…  
+    come here.  
+    This is my little digital piece of heart for you. 💞
+  </p>
+
+  <button onclick="enterChat()">Enter ArtyBot 💌</button>
+  </div>
+
+
+  <div class="chat-container" id="chatPage" style="display:none;">
+    <div class="chat-header">
+      <h2>ArtyBot 💗</h2>
+      <p>your personal chaos, comfort & love</p>
+    </div>
+
+    <div id="chat" class="chat-box"></div>
+
+    <div id="typing" class="typing-indicator" style="display:none;">
+      ArtyBot is typing<span class="dots">.</span>
+    </div>
+
+
+    <div class="input-area">
+      <input id="userInput" placeholder="Type something, Boo…" />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
