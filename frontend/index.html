@@ -7,32 +7,57 @@
 </head>
 <body>
 
-  <div class="hearts"></div>
-  
-  <div id="landing" class="landing-container">
-  <h1 class="glow-title">
-  <span class="logo-text">ArtyBot</span>
-  <span class="logo-emoji"> 🐰💗</span>
-  </h1>
+<div class="app-wrapper">
 
-  <h2>Your own personal AI Artija</h2>
+    <div class="garland garland-left">
+    <span>H</span><span>A</span><span>P</span><span>P</span><span>Y</span>
+    </div>
+  <img src="shinchan.gif" id="leftShin" class="side-gif left-gif" alt="Totoro">
 
-  <p class="love-note">
-    Happy Birthday, Boo.  
-    This is something tiny, nerdy, and very me.  
-    Whenever you miss me, fight with me, flirt with me, or just want to hear me nag you about your grammar…  
-    come here.  
-    This is my little digital piece of heart for you. 💞
-  </p>
+  <div class="hearts">
+    <!-- LEFT -->
+    <span>💗</span><span>💕</span><span>💓</span><span>❤️</span><span>🩷</span><span>💗</span><span>💕</span><span>💓</span>
 
-  <button onclick="enterChat()">Enter ArtyBot 💌</button>
+    <!-- CENTER -->
+    <span>🩷</span><span>💗</span><span>❤️</span>
+
+    <!-- RIGHT -->
+    <span>💓</span><span>💕</span><span>🩷</span><span>❤️</span><span>💗</span><span>💕</span><span>💓</span><span>🩷</span>
   </div>
 
+  <div id="landing" class="landing-container">
+    
+    <h1 class="glow-title">
+      <span class="logo-text">ArtyBot</span>
+      <span class="logo-emoji"> 🐰💗</span>
+    </h1>
+
+    <h2>Your own personal AI Artija</h2>
+
+    <p class="love-note">
+      Happy Birthday, Boo.  
+      This is something tiny, nerdy, and very me.  
+      Whenever you miss me, fight with me, flirt with me, or just want to hear me nag you about your grammar…  
+      come here.  
+      This is my little digital piece of heart for you. 💞
+    </p>
+
+    <button onclick="enterChat()">Enter ArtyBot 💌</button>
+
+    <a class="totoro-link" onclick="showTotoro()">Message from Totoro</a>
+
+    <div id="bigPaw">🐾</div>
+
+    <!-- ✅ TOTORO MUST LIVE HERE -->
+    <div id="totoroBox" class="totoro-box" style="display:none;">
+      <img src="totoro.gif" alt="Totoro message">
+    </div>
+  </div>
 
   <div class="chat-container" id="chatPage" style="display:none;">
     <div class="chat-header">
-      <h2>ArtyBot 💗</h2>
-      <p>your personal chaos, comfort & love</p>
+      <h2>ArtyBot 🐰💗</h2>
+      <p>Your personal chaos, comfort & love</p>
     </div>
 
     <div id="chat" class="chat-box"></div>
@@ -41,13 +66,20 @@
       ArtyBot is typing<span class="dots">.</span>
     </div>
 
-
     <div class="input-area">
       <input id="userInput" placeholder="Type something, Boo…" />
       <button onclick="sendMessage()">Send</button>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <div class="garland garland-right">
+  <span>B</span><span>I</span><span>R</span><span>T</span><span>H</span><span>D</span><span>A</span><span>Y</span>
+    </div>
+  <img src="shinchan dance.gif" id="rightShin" class="side-gif right-gif" alt="Shin">
+
+</div>
+
+
+<script src="script.js"></script>
 </body>
 </html>
